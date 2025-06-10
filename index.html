@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the latest video games, reviews, and gaming news">
+    <meta name="theme-color" content="#1a1a2e">
+    <title>GameHub - Your Ultimate Gaming Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192x192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🎮 GameHub</h1>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#games" class="nav-link">Games</a>
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                    <a href="#news" class="nav-link">News</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Discover Amazing Games</h2>
+                <p class="hero-subtitle">Your ultimate destination for gaming reviews, news, and discoveries</p>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search for games..." id="search-input">
+                    <button class="search-btn" id="search-btn">🔍</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured" class="featured">
+            <div class="container">
+                <h2 class="section-title">Featured Games</h2>
+                <div class="games-grid" id="games-grid">
+                    <!-- Games will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="categories">
+            <div class="container">
+                <h2 class="section-title">Browse by Category</h2>
+                <div class="category-grid">
+                    <div class="category-card" data-category="action">
+                        <div class="category-icon">⚔️</div>
+                        <h3>Action</h3>
+                    </div>
+                    <div class="category-card" data-category="adventure">
+                        <div class="category-icon">🗺️</div>
+                        <h3>Adventure</h3>
+                    </div>
+                    <div class="category-card" data-category="rpg">
+                        <div class="category-icon">🧙‍♂️</div>
+                        <h3>RPG</h3>
+                    </div>
+                    <div class="category-card" data-category="strategy">
+                        <div class="category-icon">♟️</div>
+                        <h3>Strategy</h3>
+                    </div>
+                    <div class="category-card" data-category="sports">
+                        <div class="category-icon">⚽</div>
+                        <h3>Sports</h3>
+                    </div>
+                    <div class="category-card" data-category="racing">
+                        <div class="category-icon">🏎️</div>
+                        <h3>Racing</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="news">
+            <div class="container">
+                <h2 class="section-title">Latest Gaming News</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <div class="placeholder-image">📰</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>New Gaming Console Announced</h3>
+                            <p>The latest gaming console promises revolutionary graphics and performance...</p>
+                            <span class="news-date">2 hours ago</span>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-image">
+                            <div class="placeholder-image">🎮</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Indie Game Wins Major Award</h3>
+                            <p>A small indie studio's creative masterpiece takes home the top prize...</p>
+                            <span class="news-date">5 hours ago</span>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-image">
+                            <div class="placeholder-image">🏆</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Esports Tournament Results</h3>
+                            <p>The championship finals delivered incredible matches and surprises...</p>
+                            <span class="news-date">1 day ago</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GameHub</h3>
+                    <p>Your ultimate gaming destination</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#news">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🎥</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GameHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Game Detail Modal -->
+    <div id="game-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Game details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
